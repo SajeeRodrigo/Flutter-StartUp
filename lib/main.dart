@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 
-main() {
+void main() {
   //application eke mulinma pennana dewl liynne meke
   runApp(MyApp());
   //wiget tika call krnw
@@ -17,8 +17,20 @@ class MyApp extends StatelessWidget {
     //bulding blocks wage
     //independent or nested components
     return MaterialApp(
-      home: Text('Hello World!'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello Sajee!',
+          style: TextStyle(fontSize: 20.0),
+          ),
+        ),
+        body: Center(
+          child: Text('How R u?',
+          style: TextStyle(fontSize: 60.0),
+          ),
+        ),
+      ),
       //home kiynne issellm ape app ekt giyma pennana eka
+
     );
   //return krnw wiget ekak Materialapp(root element eka) class eke obj ekak hdnw
   
